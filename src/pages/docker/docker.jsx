@@ -16,12 +16,20 @@ function Docker (){
             </div>
 
             <div className="scrollblock block-setup">
-            <h2>build image</h2>
-            <br />
-            <code>docker build -t (app-name) .</code>
+                <h2>Image</h2>
+                <p>First Create DockerFile</p>
+                <p>Create image : <code>docker build -t (image-name) .</code></p>
+                <p>List images : <code>docker images</code> </p>
+                <p>Delete image : <code>docker rmi (image-name)</code></p>
+                
             </div>
 
             <div className="scrollblock block-object">
+                <h2>Run Image as Container</h2>
+                <p>Create Container : <code>docker push (dockerid)/(app-name)</code></p>
+            </div>
+
+            <div className="scrollblock block-deployment">
             <h2>push image to docker hub</h2>
             <p>If not logged in :
             <code>docker login</code></p>

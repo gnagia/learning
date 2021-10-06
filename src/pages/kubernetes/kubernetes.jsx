@@ -31,7 +31,7 @@ function Kubernetes (){
         <div className="scrollblock block-pods">
             <h2>pods</h2>
             <p>Smallest unit</p>
-            <p>Check status of running pods : <div className="code">kubectl get pods</div></p>
+            <p>Check status of running pods : <code>kubectl get pods</code></p>
         </div>
     
         <div className="scrollblock block-deployment">
@@ -42,37 +42,25 @@ function Kubernetes (){
         <div className="scrollblock block-service">
             <h2>Service</h2>
             <p>Resposible for exposing pod to other cluster and externally. It group pods with a shared IP</p>
-            <div className="code">kubectl expose deployment (app-name) --p=(port-number) --type=(ClusterIP/NodePort/LoadBalancer)</div>
-            <p>Check status of running services : <div className="code">kubectl get services</div></p>
-            <p>For minikube (local machine), external ip is not provided by default, so run <div className="code">minikube service (app-name)</div> </p>
-        </div>
-    
-        <div className="scrollblock block-object">
-            <h2>helm</h2>
-            <p>Helm is package manager for kubernetes</p>
-            <p>Package yaml file and distribute them in public and private repositories</p>
-            <p>Helm chart - bundle of yaml files, create your own helm charts with helm - push them to helm repository - download and use existing ones</p>
-            <p>Templating engine</p>
-            <p>in ci/cd, use template file and replace value in real time</p>
-            <p>different environment</p>
-            <p>(chart-name) -
-            (Chart.yaml) : meta info about chart
-            (values.yaml) : values for template files
-            (charts) : chart dependencies
-            (templates) : actual template files
-            </p>
-            <div className="code">helm install (chartname)</div>
-            <p>Release managment</p>
-            <p></p>
+            <code>kubectl expose deployment (app-name) --p=(port-number) --type=(ClusterIP/NodePort/LoadBalancer)</code>
+            <p>Check status of running services : <code>kubectl get services</code></p>
+            <p>For minikube (local machine), external ip is not provided by default, so run <code>minikube service (app-name)</code> </p>
         </div>
     
         <div className="scrollblock block-pod">
             <h2>miscellaneous commands</h2>
-            <p className="meta">manual scaling <div className="code">kubectl scale deployment/(app-name) --replica=(number)</div></p>
-            <p className="meta">history of deployment <div className="code">kubectl rollout history deployment/(app-name)</div></p>
-            <p className="meta">rollback to last <div className="code">kubectl rollout undo deployment/(app-name)</div></p>
-            <p className="meta">rollout to particular older version <div className="code">kubectl rollout undo deployment/(app-name) --to-revision=(number)</div></p>
+            <p className="meta">manual scaling <code>kubectl scale deployment/(app-name) --replica=(number)</code></p>
+            <p className="meta">history of deployment <code>kubectl rollout history deployment/(app-name)</code></p>
+            <p className="meta">rollback to last <code>kubectl rollout undo deployment/(app-name)</code></p>
+            <p className="meta">rollout to particular older version <code>kubectl rollout undo deployment/(app-name) --to-revision=(number)</code></p>
         </div>
+
+        <div className="scrollblock block-pods">
+            <h2>config.yml</h2>
+            <code>kubectl apply -f config.yml</code>
+        </div>
+
+
       </div>
     )
 
