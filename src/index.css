@@ -1,14 +1,46 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Chelsea';
+  src: url(/public/font/ChelseaMarket-Regular.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'menlo';
+  src: url(/public/font/Menlo-Regular.ttf);
+}
+
+.page-body {
+  background: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: normal;
+  margin: 0;
+  font-family: 'Chelsea', Georgia, serif;
+  color: #000;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 70px;
+  font-weight: normal;
+  margin: 0;
+  font-family: 'Chelsea', Georgia, serif;
+  text-transform: lowercase;
+}
+
+p {
+  width: 960px;
+  margin: 40px auto;
+  color: #000;
+  line-height: 200%;
 }

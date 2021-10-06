@@ -1,0 +1,82 @@
+.scrollblock{
+  position: relative;
+  margin: 0;
+  width: 100%;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.code {
+  background-color: #000;
+  font-style: normal;
+  border-radius: 10px;
+  color: #fff;
+  padding: 5px 15px;
+  font-family: 'menlo', monospace; 
+}
+
+.meta {
+  font-size: 16px;
+  color: #999;
+}
+
+.block-setup {
+  background-color: #348fd4;
+}
+
+.block-setup a {
+  color: #fff;
+  font-size: 40px;
+  font-weight: normal;
+  font-size: normal;
+  background-color: #06406c;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.block-object {
+  color: #06406c;
+}
+
+.block-pods {
+  background-color: #4c0d09;
+}
+
+.block-pods a{
+  h2: #d3b2af;
+}
+
+.block-pods a{
+  color: #d3b2af;
+}
+
+.block-pods p{
+  color: #d3b2af;
+}
+
+.block-pods code{
+  color: #000;
+  background-color: #fff;
+}
+
+.block-deployment {
+  background-color: #cc4037;
+}
+.block-deployment h2{
+  color: #4c0d09;
+}
+.block-deployment p{
+  color: #4c0d09;
+}
+
+.block-service {
+  background-color: #ffc19f;
+}
+.block-service h2{
+  color: #cc4037;
+}
+.block-service p{
+  color: #000;
+}
