@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Kubernetes-poc/static/css/main.15100699.chunk.css",
-    "main.js": "/Kubernetes-poc/static/js/main.2a6d23a3.chunk.js",
-    "main.js.map": "/Kubernetes-poc/static/js/main.2a6d23a3.chunk.js.map",
-    "runtime~main.js": "/Kubernetes-poc/static/js/runtime~main.989d4b03.js",
-    "runtime~main.js.map": "/Kubernetes-poc/static/js/runtime~main.989d4b03.js.map",
-    "static/js/2.6702216a.chunk.js": "/Kubernetes-poc/static/js/2.6702216a.chunk.js",
-    "static/js/2.6702216a.chunk.js.map": "/Kubernetes-poc/static/js/2.6702216a.chunk.js.map",
-    "index.html": "/Kubernetes-poc/index.html",
-    "precache-manifest.564fcaf394a65561fc930be98da4756b.js": "/Kubernetes-poc/precache-manifest.564fcaf394a65561fc930be98da4756b.js",
-    "service-worker.js": "/Kubernetes-poc/service-worker.js",
-    "static/css/main.15100699.chunk.css.map": "/Kubernetes-poc/static/css/main.15100699.chunk.css.map",
-    "static/media/crown.ed28accb.svg": "/Kubernetes-poc/static/media/crown.ed28accb.svg",
-    "static/media/shopping-bag.09e6f5e7.svg": "/Kubernetes-poc/static/media/shopping-bag.09e6f5e7.svg"
+    "main.css": "/learning/static/css/main.15100699.chunk.css",
+    "main.js": "/learning/static/js/main.2a6d23a3.chunk.js",
+    "main.js.map": "/learning/static/js/main.2a6d23a3.chunk.js.map",
+    "runtime~main.js": "/learning/static/js/runtime~main.fdd06985.js",
+    "runtime~main.js.map": "/learning/static/js/runtime~main.fdd06985.js.map",
+    "static/js/2.cc96a263.chunk.js": "/learning/static/js/2.cc96a263.chunk.js",
+    "static/js/2.cc96a263.chunk.js.map": "/learning/static/js/2.cc96a263.chunk.js.map",
+    "index.html": "/learning/index.html",
+    "precache-manifest.4e4e1199ae033824bca764e8bede5c04.js": "/learning/precache-manifest.4e4e1199ae033824bca764e8bede5c04.js",
+    "service-worker.js": "/learning/service-worker.js",
+    "static/css/main.15100699.chunk.css.map": "/learning/static/css/main.15100699.chunk.css.map",
+    "static/media/crown.ed28accb.svg": "/learning/static/media/crown.ed28accb.svg",
+    "static/media/shopping-bag.09e6f5e7.svg": "/learning/static/media/shopping-bag.09e6f5e7.svg"
   }
 }
