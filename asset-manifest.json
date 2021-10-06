@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/learning/static/css/main.ee77bc1d.chunk.css",
-    "main.js": "/learning/static/js/main.1cbd2bca.chunk.js",
-    "main.js.map": "/learning/static/js/main.1cbd2bca.chunk.js.map",
+    "main.js": "/learning/static/js/main.24fa8b2e.chunk.js",
+    "main.js.map": "/learning/static/js/main.24fa8b2e.chunk.js.map",
     "runtime~main.js": "/learning/static/js/runtime~main.fd83a13d.js",
     "runtime~main.js.map": "/learning/static/js/runtime~main.fd83a13d.js.map",
-    "static/js/2.22fe12ff.chunk.js": "/learning/static/js/2.22fe12ff.chunk.js",
-    "static/js/2.22fe12ff.chunk.js.map": "/learning/static/js/2.22fe12ff.chunk.js.map",
+    "static/js/2.887c11c5.chunk.js": "/learning/static/js/2.887c11c5.chunk.js",
+    "static/js/2.887c11c5.chunk.js.map": "/learning/static/js/2.887c11c5.chunk.js.map",
     "index.html": "/learning/index.html",
-    "precache-manifest.ea054b24a75c1f78b1d71070746d5a0f.js": "/learning/precache-manifest.ea054b24a75c1f78b1d71070746d5a0f.js",
+    "precache-manifest.fd94504bb7423698ba60d5b024804109.js": "/learning/precache-manifest.fd94504bb7423698ba60d5b024804109.js",
     "service-worker.js": "/learning/service-worker.js",
     "static/css/main.ee77bc1d.chunk.css.map": "/learning/static/css/main.ee77bc1d.chunk.css.map",
     "static/media/arrow.png": "/learning/static/media/arrow.222c6d8e.png"
