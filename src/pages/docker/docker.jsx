@@ -9,7 +9,7 @@ function Docker (){
             <h1>Docker - the simple guide</h1>
             <p>just a simple guide for getting started with docker.</p>
             <p className="meta">
-                by <Link to="#">Guneet Singh Nagia</Link> 
+                by <Link to="http://gnagia.github.io/">Guneet Singh Nagia</Link> 
             </p>
             <div>
                 <img src="img/arrow.png" alt="down" />

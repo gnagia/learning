@@ -9,7 +9,7 @@ function Kubernetes (){
             <div className="scrollblock">
             <h1>Kubernetes - the simple guide</h1>
             <p>just a simple guide for getting started with kubernetes.</p>
-            <p className="meta"> by <Link to="#">Guneet Singh Nagia </Link></p>
+            <p className="meta"> by <Link to="http://gnagia.github.io/">Guneet Singh Nagia </Link></p>
             <div><img src={arrow} alt="down" /></div>
         </div>
     

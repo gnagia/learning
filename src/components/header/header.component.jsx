@@ -10,7 +10,7 @@ const Header = () => (
                 <div className="h2">01</div>
                 <div className="h3">Kubernetes</div>
                 <div className="p">Orchestration tool</div>
-                <Link className='option' to='/kubernetes'>Read More1</Link>
+                <Link className='option' to='/kubernetes'>Read More</Link>
             </div>
         </div>
   
@@ -19,7 +19,7 @@ const Header = () => (
                 <div className="h2">02</div>
                 <div className="h3">Docker</div>
                 <div className="p">Containerization.</div>
-                <Link className='option' to='/docker'>Read More2</Link>
+                <Link className='option' to='/docker'>Read More</Link>
             </div>
         </div>
    
@@ -28,7 +28,7 @@ const Header = () => (
                 <div className="h2">03</div>
                 <div className="h3">Helm</div>
                 <div className="p">yet to discover.</div>
-                <Link className='option' to='/helm'>Read More3</Link>
+                <Link className='option' to='/helm'>Read More</Link>
             </div>
         </div>
     </div>
