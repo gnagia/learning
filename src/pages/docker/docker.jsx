@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import arrow from '../../img/arrow.png';
 import './styles-docker.css';
 
 function Docker (){
@@ -11,9 +12,7 @@ function Docker (){
             <p className="meta">
                 by <Link to="http://gnagia.github.io/">Guneet Singh Nagia</Link> 
             </p>
-            <div>
-                <img src="img/arrow.png" alt="down" />
-            </div>
+            <div><img src={arrow} alt="down" /></div>
             </div>
 
             <div className="scrollblock block-setup">
