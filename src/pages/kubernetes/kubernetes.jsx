@@ -26,6 +26,7 @@ function Kubernetes (){
             <p>Deployment</p>
             <p>Service</p>
             <p>Volume</p>
+            <p>Network</p>
         </div>
     
         <div className="scrollblock block-pods">
@@ -36,7 +37,7 @@ function Kubernetes (){
     
         <div className="scrollblock block-deployment">
             <h2>deployment</h2>
-            <p>Smallest unit</p>
+            <p>Control pods</p>
         </div>
     
         <div className="scrollblock block-service">

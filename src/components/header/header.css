@@ -1,4 +1,4 @@
-.body{
+.wrapper{
       margin: 0;
       padding: 0;
       display: flex;
@@ -17,7 +17,7 @@
       grid-gap: 0 40px;
   }
   
-  .container .box{
+.box{
       position: relative;
       display: flex;
       border: 1px solid #000;
@@ -26,7 +26,7 @@
       align-items: center;
   }
   
-  .container .box:before{
+ .box:before{
       content: '';
       position: absolute;
       top: -2px;
@@ -38,20 +38,20 @@
       transform: skew(2deg,2deg);
   }
   
-  .container .box:nth-child(1):before{
+   .box:nth-child(1):before{
       background: linear-gradient(315deg, #ff0057,#e64a19);
   }
-  .container .box:nth-child(2):before{
+   .box:nth-child(2):before{
       background: linear-gradient(315deg, #89ff00,#00bcd4);
   }
-  .container .box:nth-child(3):before{
+   .box:nth-child(3):before{
       background: linear-gradient(315deg, #e91e63,#5d02ff);
   }
-  .container .box:nth-child(4):before{
+   .box:nth-child(4):before{
       background: linear-gradient(315deg, #ff0000,#ffc107);
   }
   
-  .container .box:after{
+   .box:after{
       content: '';
       position: absolute;
       top: 0;
@@ -68,7 +68,7 @@
       transform: translateY(40px);
   }
   
-  .content .h2{
+  .content .main{
       position: absolute;
       top: -60px;
       right: 20px;
@@ -79,11 +79,11 @@
       transition: 0.5s;
   }
   
-  .box:hover .content .h2{
+  .box:hover .content .main{
       top: -140px;
   }
   
-  .box .content .h3{
+  .type{
       margin: 0 0 10px;
       padding: 0;
       font-size: 24px;
@@ -91,14 +91,14 @@
       color: #fff;
   }
   
-  .box .content .p{
+  .details{
       margin: 0;
       padding: 0;
       color: #fff;
       font-size: 16px;
   }
   
-  .box .content a{
+  .box .content .option{
       position: relative;
       margin: 5px 0 0 ;
       padding: 10px 20px ;
@@ -112,13 +112,13 @@
       color: #fff;
   }
   
-  .box:hover .content a{
+  .box:hover .content .option{
       transform: translateY(0);
       visibility: visible;
       opacity: 1;
   }
   
-  .box .content a:hover{
+  .box .content .option:hover{
       color: #000;
       background: #fff;
   }

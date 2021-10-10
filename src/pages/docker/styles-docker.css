@@ -21,11 +21,11 @@
     color: #999;
   }
   
-  .block-setup {
+  .block-one {
     background-color: #348fd4;
   }
   
-  .block-setup a {
+  .block-one a {
     color: #fff;
     font-size: 40px;
     font-weight: normal;
@@ -36,16 +36,24 @@
     text-decoration: none;
   }
   
-  .block-object {
-    color: #06406c;
+  .block-two {
+    background-color: #06406c;
+  }
+
+  .block-two h2{
+    color: #fff;
+  }
+
+  .block-two p{
+    color: #fff;
   }
   
   .block-pods {
     background-color: #4c0d09;
   }
   
-  .block-pods a{
-    h2: #d3b2af;
+  .block-pods h2{
+    color: #d3b2af;
   }
   
   .block-pods a{
