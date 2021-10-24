@@ -13,38 +13,106 @@ function Kubernetes (){
             <div><img src={arrow} alt="down" /></div>
         </div>
     
-        <div className="scrollblock block-setup">
+        <div className="scrollblock block-one">
             <h2>setup</h2>
-            <p><Link to="#">Install minikube </Link></p>
+            <p><Link to="https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/">Install kubectl </Link></p>
             <p><Link to="#">Install virtualbox</Link></p>
-            <p><Link to="#">Install minikube</Link></p>
+            <p><Link to="https://minikube.sigs.k8s.io/docs/start/">Install minikube</Link></p>
         </div>
     
-        <div className="scrollblock block-object">
-            <h2>objects</h2>
-            <p>Pods</p>
-            <p>Deployment</p>
-            <p>Service</p>
-            <p>Volume</p>
-            <p>Network</p>
+        <div className="scrollblock block-two">
+            <h2>Objects</h2>
+            <div style={{display:'flex', flexDirection:'row'}}>
+                <p>Pods</p>
+                <p>Deployment</p>
+                <p>Service</p>
+                <p>Replica Set</p>
+            </div>
         </div>
     
-        <div className="scrollblock block-pods">
+        <div className="scrollblock block-three">
             <h2>pods</h2>
-            <p>Smallest unit</p>
-            <p>Check status of running pods : <code>kubectl get pods</code></p>
+            <p>Smallest unit, contains containers, it deploys single instance of an application</p>
+            <i><h6 style={{textAlign:"left"}}>
+                <ul>apiVersion: v1</ul>
+                <ul>kind: Pod</ul>
+                <ul>metadata:
+                    <li className="single">name:</li>
+                    <li className="single">labels:</li>
+                    <li className="double">key1:value1</li>
+                    <li className="double">key2:value2</li>
+                </ul>
+                <ul>spec:
+                    <li className="single">containers:</li>
+                    <li className="double">- name:</li>
+                    <li className="double"> &nbsp;&nbsp;&nbsp;image:</li>
+                </ul>
+            </h6></i>
+            <p>Create a Pod: <code>kubectl create -f (pod-name).yml</code></p>
+            <p>Check status of running pods: <code>kubectl get pods</code></p>
+            <p>All Details of pod: <code>kubectl describe pod (pod-name)</code></p>
+            <p>Few Details of pod: <code>kubectl get pods  -o wide</code></p>
         </div>
     
-        <div className="scrollblock block-deployment">
+        <div className="scrollblock block-four">
             <h2>deployment</h2>
-            <p>Control pods</p>
+            <p>Rolling updates, undo changes, pause and resume changes </p>
+            <p className="meta"> If we create Deployment object, it will by default create replicaSet which by default creates Pods</p>
+            <i><h6 style={{textAlign:"left"}}>
+                <ul>apiVersion: apps/v1</ul>
+                <ul>kind: Deployment</ul>
+                <ul>metadata:
+                    <li className="single">name:</li>
+                    <li className="single">labels:</li>
+                    <li className="double">key1:value1</li>
+                    <li className="double">key2:value2</li>
+                </ul>
+                <ul>spec:
+                    <li className="single">replicas:</li>
+                    <li className="single">selector:</li>
+                    <li className="double">matchLables:</li>
+                    <li className="triple">type:</li>
+                    <li className="single">template:</li>
+                    <li className="double">metadata:</li>
+                    <p className="meta triple" style={{color:'white'}}>(copy metadata from pod object)</p> 
+                </ul>
+            </h6></i>
+            <p>Create a Deployment: <code>kubectl create -f (deployment-name).yml</code></p>
+            <p>Check status of running deployment: <code>kubectl get deployment</code></p>
+            <p>Rollback: <code>kubectl rollout status deployment/(deployment-name)</code> </p>
+            <p>History: <code>kubectl rollout history deployment/(deployment-name)</code> </p>
+            <p>Update: <code>kubectl apply -f (deployment-name).yml</code> </p>
         </div>
     
-        <div className="scrollblock block-service">
+        <div className="scrollblock block-five">
             <h2>Service</h2>
             <p>Resposible for exposing pod to other cluster and externally. It group pods with a shared IP</p>
-            <code>kubectl expose deployment (app-name) --p=(port-number) --type=(ClusterIP/NodePort/LoadBalancer)</code>
+            <i><h6 style={{textAlign:"left"}}>
+                <ul>apiVersion: v1</ul>
+                <ul>kind: Service</ul>
+                <ul>metadata:
+                    <li className="single">name:</li>
+                </ul>
+                <ul>spec:
+                    <li className="single">type:</li>
+                    <li className="single">ports:</li>
+                    <li className="double">- &nbsp;&nbsp;&nbsp;targetPort:</li>
+                    <li className="double">&nbsp;&nbsp;&nbsp;&nbsp; port:</li>
+                    <li className="double">&nbsp;&nbsp;&nbsp;&nbsp; nodePort:</li>
+                    <li className="single">selector:</li>
+                    <li className="double">app:</li>
+                    <li className="double">type:</li>
+                </ul>
+                <div className="meta">selector is labels of pod</div>
+                <div className="meta">type: NodePort/ClusterIP/LoadBalancer</div>
+                <div className="meta">targetPort is port of POD</div>
+                <div className="meta">port is port of service</div>
+                <div className="meta">nodePort is port exposed to external world between 30000-32767</div>
+
+            </h6></i>
+            <p>Create a Service: <code>kubectl create -f (service-name).yml</code></p>
             <p>Check status of running services : <code>kubectl get services</code></p>
+            <p>Alternate : <code>kubectl expose deployment (app-name) --p=(port-number) --type=(ClusterIP/NodePort/LoadBalancer)</code></p>
             <p>For minikube (local machine), external ip is not provided by default, so run <code>minikube service (app-name)</code> </p>
         </div>
     

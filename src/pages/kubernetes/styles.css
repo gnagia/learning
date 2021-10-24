@@ -21,11 +21,25 @@ code {
   color: #999;
 }
 
-.block-setup {
+ul{
+  list-style-type: none;
+}
+
+.single{
+  margin-left: 5rem;
+}
+.double{
+  margin-left: 10rem;
+}
+.triple{
+  margin-left: 15rem;
+}
+
+.block-one {
   background-color: #348fd4;
 }
 
-.block-setup a {
+.block-one a {
   color: #fff;
   font-size: 40px;
   font-weight: normal;
@@ -36,47 +50,59 @@ code {
   text-decoration: none;
 }
 
-.block-object {
+.block-two {
   color: #06406c;
 }
 
-.block-pods {
+.block-two h2{
+  color: #06406c;
+}
+
+.block-three {
   background-color: #4c0d09;
 }
 
-.block-pods a{
-  h2: #d3b2af;
-}
-
-.block-pods a{
+.block-three h2{
   color: #d3b2af;
 }
 
-.block-pods p{
+.block-three a{
   color: #d3b2af;
 }
 
-.block-pods code{
+.block-three p{
+  color: #d3b2af;
+}
+
+.block-three code{
   color: #000;
   background-color: #fff;
 }
 
-.block-deployment {
+.block-four {
   background-color: #cc4037;
 }
-.block-deployment h2{
+.block-four h2{
   color: #4c0d09;
 }
-.block-deployment p{
+.block-four p{
   color: #4c0d09;
+}
+.block-four code{
+  color: #000;
+  background-color: #fff;
 }
 
-.block-service {
+.block-five {
   background-color: #ffc19f;
 }
-.block-service h2{
+.block-five h2{
   color: #cc4037;
 }
-.block-service p{
+.block-five p{
   color: #000;
+}
+.block-five code{
+  color: #000;
+  background-color: #fff;
 }
