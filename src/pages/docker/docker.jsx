@@ -20,8 +20,10 @@ function Docker (){
                 <p>First Create DockerFile</p>
                 <p>Create image : <code>docker build -t (image-name) .</code></p>
                 <p>List images : <code>docker images</code> </p>
-                <p>Delete image : <code>docker rmi (image-name)/docker prune</code></p>
+                <p>Delete image : <code>docker rmi (image-name)/docker system prune</code></p>
                 <p>Analyze image : <code>docker image inspect</code></p>
+                <p>Show docker disk usage : <code>docker system df</code></p>
+                <p>Get real time events from the server : <code>docker system events</code></p>
                 
             </div>
 

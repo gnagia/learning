@@ -18,6 +18,8 @@ function Kubernetes (){
             <p><Link to="https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/">Install kubectl </Link></p>
             <p><Link to="#">Install virtualbox</Link></p>
             <p><Link to="https://minikube.sigs.k8s.io/docs/start/">Install minikube</Link></p>
+            <p>Start minikube : <code>minikube start --driver=virtualbox</code></p>
+            <p>Status of minikube : <code>minikube status</code></p>
         </div>
     
         <div className="scrollblock block-two">
@@ -46,12 +48,16 @@ function Kubernetes (){
                     <li className="single">containers:</li>
                     <li className="double">- name:</li>
                     <li className="double"> &nbsp;&nbsp;&nbsp;image:</li>
+                    <li className="double"> &nbsp;&nbsp;&nbsp;ImagePullPolicy:IfNotPresent</li>
                 </ul>
             </h6></i>
+            <p className="meta">For local, before building image run <code>eval $(minikube docker-env)</code> and add ImagePullPolicy in yaml</p>
             <p>Create a Pod: <code>kubectl create -f (pod-name).yml</code></p>
             <p>Check status of running pods: <code>kubectl get pods</code></p>
             <p>All Details of pod: <code>kubectl describe pod (pod-name)</code></p>
             <p>Few Details of pod: <code>kubectl get pods  -o wide</code></p>
+            <p>Delete pod: <code>kubectl delete pod (pod-name).yml</code></p>
+            <p>Debug: <code>kubectl get events</code></p>
         </div>
     
         <div className="scrollblock block-four">
